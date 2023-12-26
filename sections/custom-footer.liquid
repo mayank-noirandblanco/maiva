@@ -1,0 +1,334 @@
+<script src="https://kit.fontawesome.com/3d3c36d673.js" crossorigin="anonymous"></script>
+    
+    <div class="mof">
+        <div class="mof-max">
+            <div class="mof-upper">
+                <div class="mofemail">
+                    <h3>Subscribe to our newsletter and <br>receive a free yoghurt with your <br>first subscription
+                        order.</h3>
+                  <div class="mofemailbox">
+                      {% form 'customer', class: 'newsletter-form' %}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div
+                          class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                          {% if settings.animations_reveal_on_scroll %}
+                            data-cascade
+                            style="--animation-order: {{ forloop.index }};"
+                          {% endif %}
+                        >
+                          <div class="field mofcfield">
+                            <input
+                              id="NewsletterForm--{{ section.id }}"
+                              type="email"
+                              name="contact[email]"
+                              class="field__input"
+                              value="{{ form.email }}"
+                              aria-required="true"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              autocomplete="email"
+                              {% if form.errors %}
+                                autofocus
+                                aria-invalid="true"
+                                aria-describedby="Newsletter-error--{{ section.id }}"
+                              {% elsif form.posted_successfully? %}
+                                aria-describedby="Newsletter-success--{{ section.id }}"
+                              {% endif %}
+                              placeholder="{{ 'newsletter.label' | t }}"
+                              required
+                            >
+                            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                              {{ 'newsletter.label' | t }}
+                            </label>
+                            <button
+                              type="submit"
+                              class="newsletter-form__button field__button"
+                              name="commit"
+                              id="Subscribe"
+                              aria-label="{{ 'newsletter.button_label' | t }}"
+                            >
+                              <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Component_16.svg?v=1703529608" alt="">
+                            </button>
+                          </div>
+                          {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                              {%- render 'icon-error' -%}
+                              {{- form.errors.translated_fields.email | capitalize }}
+                              {{ form.errors.messages.email -}}
+                            </small>
+                          {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                          <h3
+                            class="newsletter-form__message newsletter-form__message--success form__message"
+                            id="Newsletter-success--{{ section.id }}"
+                            tabindex="-1"
+                            autofocus
+                          >
+                            {% render 'icon-success' -%}
+                            {{- 'newsletter.success' | t }}
+                          </h3>
+                        {%- endif -%}
+                      {% endform %}                    
+                  </div>
+                </div>
+                <div class="mofsocial">
+                    <h3>Follow us on our social<br> networks</h3>
+                    <div class="moicons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="mofimg">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/priscilla-du-preez-frRrn5ASwzo-unsplash_1.png?v=1703419191"
+                        alt="">
+
+                </div>
+            </div>
+            <!-- Down Footer -->
+            <div class="mof-down">
+                <div class="scb1">
+                    <h2>shop <br>community <br>build your box</h2>
+                </div>
+                <div class="moflinkflex">
+                    <div class="moflink2">
+                        <div class="moful">
+                            <a href="#">our story</a>
+                            <a href="#">retailers</a>
+                            <a href="#">wholesale</a>
+                            <a href="#">faq</a>
+                            <a href="#">contact</a>
+                        </div>
+                        <div class="mofpt">
+                            <a href="#">privacy policy</a>
+                            <a href="#">terms & conditions</a>
+                        </div>
+                    </div>
+                    <div class="moflink3">
+                        <div class="moflby">
+                            <a href="#">login</a>
+                            <a href="#">become an affiliate</a>
+                            <a href="#">your subscription</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mof {
+    padding: 20px 0;
+}
+
+.mof-max {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mof-upper {
+    display: flex;
+    gap: 1em;
+}
+
+.mofemail {
+    width: 50%;
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3em;
+}
+.mofcfield:after, .select:after, .customer .field:after, .customer select:after, .localization-form__select:after {
+    content: unset;
+}
+.mofcfield input {
+    border-radius: 50px;
+    border: 2px solid black;
+}  
+.mofsocial {
+    width: 20%;
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mof-upper h3 {
+    font-size: 14px!important;
+    color: black;
+    line-height: 16px!important;
+}
+
+.moicons {
+    display: flex;
+    gap: 1em;
+}
+
+.moicons i {
+    font-size: 30px!important;
+    color: black;
+}
+
+.mofimg {
+    width: 30%;
+}
+
+.mofimg img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ----------- Down ----------- */
+.mof-down {
+    display: flex;
+    gap: 1em;
+}
+
+.scb1 {
+    width: 50%;
+}
+
+.scb1 h2 {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: black;
+    line-height: 32px!important;
+}
+
+.moflinkflex {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 1em;
+}
+
+.moflink2 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.moful {
+    display: flex;
+    flex-direction: column;
+}
+
+.moful a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px !important;
+}
+
+.mofpt {
+    display: flex;
+    flex-direction: column;
+}
+
+.mofpt a {
+    text-decoration: none;
+    font-size: 16px !important;
+    color: #00000080;
+}
+
+.moflink3 {
+    width: 59%;
+}
+
+.moflby {
+    display: flex;
+    flex-direction: column;
+}
+
+.moflby a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px !important;
+}
+
+@media (max-width:767px) {
+    .mof-upper {
+        flex-direction: column;
+    }
+
+    .mofemail {
+        width: unset;
+    }
+
+    .mofsocial {
+        width: unset;
+        gap: 2em;
+    }
+
+    .mofimg {
+        width: unset;
+        display: none;
+    }
+
+    .mof-down {
+        flex-direction: column;
+    }
+
+    .scb1 {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .moflinkflex {
+        width: 100%;
+    }
+  .moflink2 {
+    width: 50%;
+}
+.moflink3 {
+    width: 50%;
+}  
+.moful a {
+    line-height: 26px!important;
+}  
+.moflby a {
+    line-height: 26px!important;
+}  
+.mofpt a {
+    line-height: 18px!important;
+    font-size: 14px !important;
+}  
+}  
+</style>
+
+{% schema %}
+  {
+    "name": "Custom Footer",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Custom Footer",
+        "category":"footer"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

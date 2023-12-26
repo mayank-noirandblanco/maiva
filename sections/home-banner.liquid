@@ -1,0 +1,88 @@
+    <div class="maib">
+        <img class="maibdesktop" src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Untitled-1-02_1.png?v=1703444096" alt="">
+        <img class="maibmobile" src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Rectangle_5.png?v=1703444031" alt="">
+        <div class="maib-contant">
+            <a href="#">Shop Now</a>
+        </div>
+    </div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+.maib {
+  width: 100%;
+  position: relative;
+}
+
+.maib img {
+    width: 100%;
+}
+
+.maib-contant {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+.maib-contant a {
+    text-decoration: none;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #00009d;
+    font-weight: 700;
+}
+img.maibmobile {
+    display: none;
+} 
+@media (max-width:767px) {
+    .maib-contant a {
+        text-decoration: none;
+        background: white;
+        padding: 8px 22px;
+        border-radius: 50px;
+        color: #00009d;
+        font-weight: 700;
+        font-size: 10px;
+    }
+
+    .maib-contant {
+        position: absolute;
+        top: 75%;
+        left: 10%;
+    }
+}
+@media (max-width:500px){
+img.maibmobile {
+    display: block;
+}
+img.maibdesktop {
+    display: none;
+}
+.maib-contant {
+    display: none;
+}  
+}  
+</style>
+
+{% schema %}
+  {
+    "name": "Home Banner",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Home Banner",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

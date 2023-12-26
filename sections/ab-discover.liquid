@@ -1,0 +1,82 @@
+    <div class="abud">
+        <div class="abud-max">
+            <h2>Discover our offerings</h2>
+            <div class="abud-main">
+                <div class="abud-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.30_PM.png?v=1699882269"
+                        alt="">
+                </div>
+                <div class="abud-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.20_PM.png?v=1699882269"
+                        alt="">
+                </div>
+                <div class="abud-box">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.06_PM.png?v=1699882268"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .abud {
+            padding: 20px 0;
+        }
+
+        .abud-max {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .abud-main {
+            display: flex;
+            gap: 1em;
+        }
+
+        .abud-box {
+            width: 33.33333%;
+        }
+
+        .abud-box img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .abud-max h2 {
+            margin: 0;
+            font-size: 22px !important;
+            font-weight: 600 !important;
+            padding: 20px 0;
+            line-height: 26px !important;
+        }
+
+        @media (max-width:767px) {
+            .abud-main {
+                flex-direction: column;
+            }
+
+            .abud-box {
+                width: 100%;
+            }
+        }
+    </style>
+
+{% schema %}
+  {
+    "name": "About Us Dicover",
+    "settings": [],
+    "presets":[
+      {
+        "name":"About Us Dicover",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

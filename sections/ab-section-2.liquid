@@ -1,0 +1,143 @@
+    <div class="mabu">
+        <div class="mabu-max">
+            <div class="mabubox1">
+                <div class="mabuimg">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Rectangle_7.png?v=1703501291"
+                        alt="">
+                </div>
+                <div class="mabucontant">
+                    <h2>Nourish and Delight,<br> Naturally and Responsibly</h2>
+                    <p>At Maiva, our mission is to enrich lives through natural and nutritious foods. We aim to bring
+                        you delightful, wholesome alternatives tailored to various dietary needs. Embracing
+                        sustainability and transparency, we strive to produce foods that nourish you and the planet
+                        alike. Our promise is to not only introduce you to indulgent and healthy plant-based
+                        alternatives, but also make it a seamless part of your everyday diet. We want you to choose
+                        wellness as a part of your routine – A habit that builds and not an effort you need to choose.
+                    </p>
+                </div>
+            </div>
+            <div class="mabubox2">
+                <div class="mabucontant">
+                    <h2>A Healthier World,<br> One Meal at a Time</h2>
+                    <p>Maiva dreams of a world where health and joy effortlessly blend together. We aim towards a
+                        sustainable and inclusive nutrition, serving delectable options that care for both our bodies
+                        and the Earth. Through mindful choices, we seek to build a community where every meal paints a
+                        picture of a brighter, healthier future for everyone.
+                    </p>
+                </div>
+                <div class="mabuimg">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Rectangle_7.png?v=1703501291"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mabu {
+    padding: 20px 0;
+}
+
+.mabu-max {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mabubox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.mabubox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.mabuimg {
+    width: 50%;
+}
+
+.mabuimg img {
+    width: 100%;
+}
+
+.mabucontant {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mabucontant h2 {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    line-height: 36px !important;
+    color: black;
+    margin: 0px;
+}
+
+.mabucontant p {
+    font-size: 14px !important;
+    text-align: justify;
+    margin: 0;
+    color: black;
+}
+
+@media (max-width:767px) {
+    .mabubox1 {
+        flex-direction: column-reverse;
+    }
+
+    .mabubox2 {
+        flex-direction: column;
+    }
+
+    .mabuimg {
+        width: 100%;
+    }
+
+    .mabucontant {
+        width: 100%;
+    }
+
+    .mabucontant h2 {
+        font-size: 22px !important;
+        line-height: 28px !important;
+    }
+.mabu-max {
+    gap: 3em;
+}  
+}  
+</style>
+
+{% schema %}
+  {
+    "name": "About Us Section 2",
+    "settings": [],
+    "presets":[
+      {
+        "name":"About Us Section 2",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,134 @@
+    <div class="owrit">
+        <div class="owritimgbox">
+            <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/priscilla-du-preez-frRrn5ASwzo-unsplash_1.png?v=1703419191"
+                alt="">
+            <div class="owrit-contant">
+                <h2>happy and healthy from the inside out is the Maiva mantra</h2>
+                <div class="owrit-btn">
+                    <a href="#">explore our products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+.owrit {
+    padding: 20px 0 20px 0;
+}  
+.owritimgbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.owritimgbox img {
+    width: 100%;
+}
+
+.owrit-contant {
+    position: absolute;
+    max-width: 460px;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.owrit-contant h2 {
+    font-size: 30px!important;
+    font-weight: 400;
+    color: white;
+}
+
+.owrit-btn {
+    padding: 20px 0;
+}
+
+.owrit-btn a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000F9F;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+@media (max-width:767px) {
+    .owritimgbox img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .owritimgbox {
+        display: unset;
+    }
+
+    .owrit-btn a {
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 1px;
+        background: none;
+        color: white;
+    }
+
+    .owrit-contant {
+        padding: 20px 20px;
+        gap: 1em;
+    }
+
+    .owrit-contant h2 {
+        font-size: 28px!important;
+        font-weight: 600!important;
+        color: #000F9F;
+    }
+
+    .owrit-btn {
+        padding: 15px 0;
+        width: 75%;
+        background: #000F9F;
+        text-align: center;
+        margin: 0;
+        border-radius: 35px;
+    }
+    .owrit {
+        padding: 20px 0 220px 0;
+    }
+}
+
+@media (max-width:425px) {
+    .owrit-btn {
+padding: 10px 0;
+    width: 65%;
+    background: #000F9F;
+    text-align: center;
+    border-radius: 40px;
+    }
+
+    .owrit-btn a {
+        text-decoration: none;
+        font-size: 12px!important;
+        font-weight: 100!important;
+    }
+} 
+</style>
+
+{% schema %}
+  {
+    "name": "Home Image Banner",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Home Image Banner",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

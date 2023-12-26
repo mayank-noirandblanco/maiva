@@ -29,8 +29,14 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        "sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom {background: #5e73d5;}",
+        ".header__menu-item span {color: white;}",
+        ".header__menu-item .icon-caret {color: white;}",
+        ".header__icon:not(.header__icon--summary), .header__icon span {color: white;}"
+      ],
       "settings": {
-        "logo_position": "top-left",
+        "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",

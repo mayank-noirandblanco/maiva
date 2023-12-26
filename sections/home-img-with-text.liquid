@@ -1,0 +1,134 @@
+    <div class="tfit">
+        <div class="tfit-max">
+            <div class="tfit-img">
+                <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/image_4.png?v=1703138619" alt="">
+            </div>
+            <div class="tfit-content">
+                <h2>The Maiva Story</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam eum aspernatur, quia dicta porro
+                    illo earum quae deleniti ab rem, cupiditate consectetur velit debitis! Odio porro fugit ratione fuga
+                    magnam hic esse alias libero, ullam quia voluptatibus, nihil aut assumenda sint, magni quo mollitia?
+                </p>
+                <div class="tfit-btn">
+                    <a href="#">explore our brand</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+  
+.tfit {
+    padding: 50px 0;
+}
+
+.tfit-max {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.tfit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    width: 50%;
+}
+
+.tfit-content h2 {
+    font-size: 36px!important;
+    color: #000F9F;
+    font-weight: 600!important;
+}
+
+.tfit-content p {
+    font-size: 18px!important;
+    color: #343434;
+}
+
+.tfit-btn {
+    margin-top: 25px;
+}
+
+.tfit-btn a {
+    background: #000F9F;
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px 12px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tfit-img {
+    width: 50%;
+}
+
+.tfit-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width:767px) {
+    .tfit-content h2 {
+        font-size: 28px!important;
+        color: #000F9F;
+    }
+
+    .tfit-content p {
+        font-size: 16px!important;
+        color: #343434;
+    }
+
+    .tfit-btn a {
+        background: #000F9F;
+        text-decoration: none;
+        color: white;
+        padding: 10px 30px 12px 30px;
+        border-radius: 30px;
+        font-size: 12px!important;
+        font-weight: 400;
+    }
+
+    .tfit-btn {
+        margin-top: 15px;
+    }
+
+    .tfit-max {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .tfit-content {
+        width: 100%;
+    }
+
+    .tfit-img {
+        width: 100%;
+    }
+}
+</style>
+
+{% schema %}
+  {
+    "name": "Home Image With Text",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Home Image With Text",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

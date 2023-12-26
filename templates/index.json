@@ -1,406 +1,48 @@
 {
   "sections": {
-    "031558b2-e6fe-4cba-9f59-070b9e893892": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21451079057702__031558b2-e6fe-4cba-9f59-070b9e893892-slide-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banners-07_44b3f589-df3d-43ad-a199-472acf0afbe6.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--21451079057702__031558b2-e6fe-4cba-9f59-070b9e893892-slide-2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banners-04_9cecbdce-151e-4bec-8477-cfc5af6c563c.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "aa276f2e-46f2-49be-855d-9b2b283bc737": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banners-05_cf698c99-652b-48cd-bbd1-0761d44763ef.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--21451079057702__031558b2-e6fe-4cba-9f59-070b9e893892-slide-1",
-        "template--21451079057702__031558b2-e6fe-4cba-9f59-070b9e893892-slide-2",
-        "aa276f2e-46f2-49be-855d-9b2b283bc737"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": ""
-      }
-    },
-    "88d4bbf1-a800-488f-8da5-50aa1658bd03": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21451079057702__88d4bbf1-a800-488f-8da5-50aa1658bd03-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot2023-10-28at10.55.35PM.png",
-            "title": "Almond Milk",
-            "text": "<p>Details Here<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21451079057702__88d4bbf1-a800-488f-8da5-50aa1658bd03-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-04_at_11.13.11_PM.png",
-            "title": "Yoghurt",
-            "text": "<p>Details here<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21451079057702__88d4bbf1-a800-488f-8da5-50aa1658bd03-column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot2023-10-28at9.12.07PM.png",
-            "title": "Paneer",
-            "text": "<p>Details here<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21451079057702__88d4bbf1-a800-488f-8da5-50aa1658bd03-column-1",
-        "template--21451079057702__88d4bbf1-a800-488f-8da5-50aa1658bd03-column-2",
-        "template--21451079057702__88d4bbf1-a800-488f-8da5-50aa1658bd03-column-3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "half",
-        "image_ratio": "circle",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "f964ae21-cda6-4784-ae26-8c25527120f1": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<marquee style=\"font-size:40px;height:40px;padding-top:5px;\">\nZero Cholestrol awesomeness BPA Free\n<\/marquee>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "3a576bc7-b286-4bc8-a566-1b5a078e2224": {
-      "type": "pagefly-section",
-      "settings": {
-        "section_id": "pf-7a93fbc6"
-      }
-    },
-    "1d3d1856-b9da-4173-8d84-62ce2bffbe92": {
-      "type": "image-banner",
-      "blocks": {
-        "template--21741115375910__1d3d1856-b9da-4173-8d84-62ce2bffbe92-heading-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--21741115375910__1d3d1856-b9da-4173-8d84-62ce2bffbe92-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21741115375910__1d3d1856-b9da-4173-8d84-62ce2bffbe92-heading-1",
-        "template--21741115375910__1d3d1856-b9da-4173-8d84-62ce2bffbe92-buttons-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/image_5.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "top-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "6aec965a-4c86-4584-a7c1-5dff619888fb": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--21741115375910__6aec965a-4c86-4584-a7c1-5dff619888fb-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Maiva Story",
-            "heading_size": "h0"
-          }
-        },
-        "template--21741115375910__6aec965a-4c86-4584-a7c1-5dff619888fb-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Maiva means My Life in ancient Latin. True to its name, the world of Maiva embraces all of life - health, happiness, moments of delight. Care is at the heart of everything we do. For you, the planet and the future. Our range of wholesome, nutrition rich products are crafted in an environmentally conscious way to create flavours that are pure good, pure joy.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--21741115375910__6aec965a-4c86-4584-a7c1-5dff619888fb-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "explore our brand",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21741115375910__6aec965a-4c86-4584-a7c1-5dff619888fb-heading-1",
-        "template--21741115375910__6aec965a-4c86-4584-a7c1-5dff619888fb-text-1",
-        "template--21741115375910__6aec965a-4c86-4584-a7c1-5dff619888fb-button-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/image_4.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "background-1",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "c7b984ed-4d0a-4937-962a-2789cfcabcfc": {
-      "type": "kava-slider-aurora-02",
-      "blocks": {
-        "template--21451079057702__c7b984ed-4d0a-4937-962a-2789cfcabcfc-slide-2": {
-          "type": "slide",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/Banners-03_e7167898-4534-4464-a9c5-556ca3d131bc.jpg",
-            "slide_text": ""
-          }
-        },
-        "template--21451079057702__c7b984ed-4d0a-4937-962a-2789cfcabcfc-slide-3": {
-          "type": "slide",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/Banners-04_9cecbdce-151e-4bec-8477-cfc5af6c563c.jpg",
-            "slide_text": ""
-          }
-        },
-        "528d0463-b100-46d9-bafc-fe4210b9e5d1": {
-          "type": "slide",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/Banners-05_cf698c99-652b-48cd-bbd1-0761d44763ef.jpg",
-            "slide_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21451079057702__c7b984ed-4d0a-4937-962a-2789cfcabcfc-slide-2",
-        "template--21451079057702__c7b984ed-4d0a-4937-962a-2789cfcabcfc-slide-3",
-        "528d0463-b100-46d9-bafc-fe4210b9e5d1"
-      ],
-      "disabled": true,
-      "settings": {
-        "is_fullwidth": true,
-        "section_height": true,
-        "count": 1,
-        "gutter": 0,
-        "controls": true,
-        "delay": 5000,
-        "autoplay": true,
-        "loop": true,
-        "section_padding_top": 0,
-        "section_padding_bottom": 0,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "container_max_width": 1320,
-        "custom_class": "",
-        "custom_css": "",
-        "lazyload": true
-      }
-    },
-    "016f5a25-654d-4b3d-84e4-8196a31e77bb": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--21451079057702__016f5a25-654d-4b3d-84e4-8196a31e77bb-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Maiva Story",
-            "heading_size": "h1"
-          }
-        },
-        "template--21451079057702__016f5a25-654d-4b3d-84e4-8196a31e77bb-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Maiva means 'My Life' in ancient Latin. True to its name, the world of Maiva embraces all of life - health, happiness, moments of delight. Care is at the heart of everything we do. For you, the planet and the future. Our range of wholesome, nutrition rich products are crafted in an environmentally conscious way to create flavours that are pure good, pure joy.<br\/><\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--21451079057702__016f5a25-654d-4b3d-84e4-8196a31e77bb-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "explore our brand",
-            "button_link": "shopify:\/\/pages\/about-us",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "template--21451079057702__016f5a25-654d-4b3d-84e4-8196a31e77bb-heading-1",
-        "template--21451079057702__016f5a25-654d-4b3d-84e4-8196a31e77bb-text-1",
-        "template--21451079057702__016f5a25-654d-4b3d-84e4-8196a31e77bb-button-1"
-      ],
+    "1273f428-5249-4609-af9f-068fe33c0189": {
+      "type": "home-banner",
       "custom_css": [
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-11-11_at_5.16.58_PM.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
-    "00d33eed-a4a7-4edd-b0ac-cdd8627b3627": {
-      "type": "kava-about-penelope-01",
-      "disabled": true,
+    "9078d1f6-20bd-4927-ba6e-9b408e455fcd": {
+      "type": "home-slider-img",
       "settings": {
-        "inherit_fonts": false,
-        "text_color": "#262424",
-        "background_color": "rgba(0,0,0,0)",
-        "section_padding_top": 50,
-        "section_padding_bottom": 50,
-        "section_padding_top_mobile": 50,
-        "section_padding_bottom_mobile": 50,
-        "container_max_width": 1320,
-        "custom_class": "",
-        "custom_css": ""
       }
     },
-    "25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--21451079057702__25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e-heading-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--21451079057702__25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our vision is to make healthy eating a joy, not a daily chore. It is to arm you with guilt-free, tasty plant-based indulgences that free up the time you spend in the kitchen fixing breakfast, lunch,snacks and dinner. So that you can feel your best and take care of yourself, absolutely effortlessly.<br\/><br\/><\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--21451079057702__25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e-button-1": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21451079057702__25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e-heading-1",
-        "template--21451079057702__25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e-text-1",
-        "template--21451079057702__25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e-button-1"
+    "9ada26c5-9285-44c3-a519-ca3a6598c825": {
+      "type": "home-text-ticker-slider",
+      "settings": {
+      }
+    },
+    "3a576bc7-b286-4bc8-a566-1b5a078e2224": {
+      "type": "pagefly-section",
+      "custom_css": [
+        ".__pf_kj1YkGp9 .pf-7a93fbc6dfe6-12_,.__pf_kj1YkGp9 .pf-7a93fbc6dfe6-18_,.__pf_kj1YkGp9 .pf-7a93fbc6dfe6-24_ {margin-bottom: 10px;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-11-11_at_5.20.43_PM.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "section_color_scheme": "",
-        "color_scheme": "accent-2",
-        "image_behavior": "ambient",
-        "mobile_content_alignment": "left",
-        "padding_top": 12,
-        "padding_bottom": 12
+        "section_id": "pf-7a93fbc6"
+      }
+    },
+    "e0718ffc-2a08-4a8c-876b-59c0822053da": {
+      "type": "home-image-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "cf82908e-d7d5-4e89-8b0d-327fbf050ecb": {
+      "type": "home-img-with-text",
+      "settings": {
       }
     },
     "0e531f28-aabd-4cf4-b0a3-08d16ba6c5bf": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "community",
         "heading_size": "h2",
@@ -416,28 +58,26 @@
         "padding_bottom": 36
       }
     },
-    "41dc6b00-e8e6-4569-ae05-8c8f826aad65": {
-      "type": "custom-liquid",
+    "9875d0aa-0bd0-46bf-868e-32854b5cfcc2": {
+      "type": "home-image-with-upper-text",
       "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+      }
+    },
+    "c19d560a-617e-4bdf-a371-0a93d8c452a7": {
+      "type": "home-blog",
+      "settings": {
       }
     }
   },
   "order": [
-    "031558b2-e6fe-4cba-9f59-070b9e893892",
-    "88d4bbf1-a800-488f-8da5-50aa1658bd03",
-    "f964ae21-cda6-4784-ae26-8c25527120f1",
+    "1273f428-5249-4609-af9f-068fe33c0189",
+    "9078d1f6-20bd-4927-ba6e-9b408e455fcd",
+    "9ada26c5-9285-44c3-a519-ca3a6598c825",
     "3a576bc7-b286-4bc8-a566-1b5a078e2224",
-    "1d3d1856-b9da-4173-8d84-62ce2bffbe92",
-    "6aec965a-4c86-4584-a7c1-5dff619888fb",
-    "c7b984ed-4d0a-4937-962a-2789cfcabcfc",
-    "016f5a25-654d-4b3d-84e4-8196a31e77bb",
-    "00d33eed-a4a7-4edd-b0ac-cdd8627b3627",
-    "25c60fca-e87b-42a2-bdf1-b42bfaf4bb4e",
+    "e0718ffc-2a08-4a8c-876b-59c0822053da",
+    "cf82908e-d7d5-4e89-8b0d-327fbf050ecb",
     "0e531f28-aabd-4cf4-b0a3-08d16ba6c5bf",
-    "41dc6b00-e8e6-4569-ae05-8c8f826aad65"
+    "9875d0aa-0bd0-46bf-868e-32854b5cfcc2",
+    "c19d560a-617e-4bdf-a371-0a93d8c452a7"
   ]
 }

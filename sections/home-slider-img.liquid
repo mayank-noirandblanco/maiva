@@ -1,0 +1,170 @@
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    
+    
+    <div class="moyb">
+        <h2>The perfect blend<br> of goodness and joy.</h2>
+        <div class="lazy-sbc">
+            <div class="sbc-img">
+                <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.30_PM.png?v=1699882269"
+                    alt="">
+            </div>
+            <div class="sbc-img">
+                <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.41_PM.png?v=1699882268"
+                    alt="">
+            </div>
+            <div class="sbc-img">
+                <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.06_PM.png?v=1699882268"
+                    alt="">
+            </div>
+            <div class="sbc-img">
+                <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/Screenshot_2023-11-13_at_7.00.20_PM.png?v=1699882269"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== javascript ========= -->
+
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+
+    <script>
+        $('.lazy-sbc').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 990,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 768,
+                settings: "unslick"
+            }]
+        });
+    </script>
+
+<style>
+  * {
+    margin: 0%;
+    padding: 0%;
+}
+
+.moyb {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 0 50px 0;
+}
+
+.moyb h2 {
+    font-size: 30px!important;
+    text-align: left;
+    padding: 10px 40px;
+    font-weight: 600!important;
+    line-height: 30px!important;
+}
+
+.lazy-sbc {
+    margin: 0px auto;
+    max-width: 1350px;
+    padding: 0 40px 0 370px;
+}
+
+.sbc-img {
+    margin: 0 5px;
+}
+
+.sbc-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.moyb .slick-prev,
+.slick-next {
+    top: 45% !important;
+}
+
+.moyb .slick-prev {
+    left: 340px;
+    z-index: 1;
+}
+
+.moyb .slick-next {
+    right: 20px !important;
+}
+
+.moyb .slick-prev:before,
+.slick-next:before {
+    color: #000000 !important;
+    border-radius: 30px;
+}
+
+.moyb .slick-prev:before {
+    content: "\f053";
+    background-image: none !important;
+    font-size: 16px;
+    font-family: fontawesome;
+    filter: none !important;
+    line-height: 1;
+}
+
+.moyb .slick-next:before {
+    content: "\f054";
+    background-image: none !important;
+    font-size: 16px;
+    font-family: fontawesome;
+    filter: none !important;
+    line-height: 1;
+}
+
+@media (max-width:767px) {
+    .lazy-sbc {
+        margin: 0px auto;
+        max-width: 1200px;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+    }
+
+    .moyb .slick-prev {
+        left: 20px;
+        z-index: 1;
+    }
+      .moyb {
+        padding: 40px 0 0px 0;
+    }
+}
+
+@media (max-width: 425px) {}
+
+@media (max-width:375px) {}
+</style>
+
+
+{% schema %}
+  {
+    "name": "Home Slider Img",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Home Slider Img",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

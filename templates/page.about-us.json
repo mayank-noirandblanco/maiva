@@ -8,215 +8,38 @@
         "padding_bottom": 28
       }
     },
-    "c51fa746-82f9-4e7c-9ea9-a95a62c2ca7a": {
-      "type": "kava-image-lily-01",
+    "6f57e0ba-0a99-4d98-86f0-2ad6c8f443f5": {
+      "type": "ab-banner",
       "settings": {
-        "is_fullwidth": true,
-        "background_image": "shopify:\/\/shop_images\/Banners-06.jpg",
-        "image_description": "",
-        "image_description_fz": 24,
-        "section_padding_top": 0,
-        "section_padding_bottom": 0,
-        "img_min_height": 80,
-        "background_position_x": 50,
-        "background_position_y": 80,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "img_min_height_mobile": 100,
-        "background_position_x_mobile": 50,
-        "background_position_y_mobile": 50,
-        "container_max_width": 1320,
-        "custom_class": "",
-        "custom_css": "",
-        "lazyload": true
       }
     },
-    "aee38c8d-f60b-4fed-b704-f3f0a961c1be": {
-      "type": "rich-text",
-      "blocks": {
-        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Maiva<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>\"Maiva\" originates from ancient Latin, which means 'My Life' — a chosen path towards health and <strong>vitality<\/strong>. Crafted to nourish, designed to delight. Welcome to our world of Pure Good, Pure Joy.<br\/><br\/>Our brand is a tribute to a lifestyle of health and vitality. At Maiva, we passionately craft healthy foods, each product a promise of nourishment and delight. Driven by our commitment to pure good and pure joy, we invite you to explore a world where every choice is an opportunity to nurture well-being and savor life's simple pleasures<\/p>"
-          }
-        },
-        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-button-1": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-heading-1",
-        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-text-1",
-        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-button-1"
-      ],
+    "3625b390-f8b7-4f27-8edb-055bba28f5da": {
+      "type": "ab-section-1",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
-    "de702a69-6271-42f5-964c-a8f2a0d6a211": {
-      "type": "multirow",
-      "blocks": {
-        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-1": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg",
-            "caption": "",
-            "heading": "Nourish and Delight, Naturally and Responsibly",
-            "text": "<p><em>At Maiva, our mission is to enrich lives through natural and nutritious foods. We're dedicated to crafting delightful and wholesome alternatives that cater to diverse dietary needs. Embracing sustainability and transparency, we strive to produce foods that benefit our customers and the planet alike. <\/em><\/p><p><em>Our commitment is to make healthy living accessible, joyful, and an integrated part of everyday life, ensuring a positive impact on both individual wellness and global health.<\/em><\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-2": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DALL_E_2023-11-11_19.09.05_-_A_photorealistic_image_of_a_flattened_map_of_the_world_heavily_featuring_a_variety_of_colorful_fruits_along_with_green_leafy_vegetables_and_nuts._Th.png",
-            "caption": "",
-            "heading": "<strong>A Healthier World, One Meal at a Time<\/strong>",
-            "text": "<p><em>Maiva envisions a world where health and happiness coexist harmoniously. We aspire to lead a global shift towards sustainable and inclusive nutrition, offering delicious choices that nurture both the body and the earth. By championing mindful consumption, we aim to cultivate a community where each meal is a step towards a brighter, healthier future for all.<\/em><\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-3": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-1",
-        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-2",
-        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-3"
-      ],
+    "b520396f-b826-484e-a320-cfbeb90214cd": {
+      "type": "ab-section-2",
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
-    "9cef9ebf-403a-419f-b7a7-2c8e73a474ae": {
-      "type": "kava-text-hailey-01",
-      "blocks": {
-        "template--21491227590950__9cef9ebf-403a-419f-b7a7-2c8e73a474ae-content-1": {
-          "type": "content",
-          "settings": {
-            "content_title": "Our Story",
-            "content_text": "<p>Our Founders are close friends, Siddharth and Pratik and share a bond deeper than most. Siddharth is a CA and Lawyer, and Pratik a Finance and Supply Chain professional, shared a devotion to health and fitness. From gym routines to sports, their commitment to wellness was a constant echo in their busy lives.<\/p><p>Yet, beneath this surface of success and health, a problem quietly brewed. Long hours at work and relentless travel meant grabbing meals on the go became a norm. Unknowingly,their well-being was slipping through the cracks of fast-food packages and quick<br\/>cafeteria bites. This path led them to a worrying place: despite their physical activity, their health was declining, mirrored in increasing weight and a cascade of small but persistent health issues - allergies, exhaustion, bloating. Their bodies were silently revolting against the very lifestyle they had adopted.<\/p><p>The moment of truth arrived unexpectedly. During a breakfast shared with laughter and stories, Pratik's recent lactose intolerance came to light. It was a simple<br\/>conversation but one that opened their eyes wide. They realized the root of their troubles was not just their hectic schedules but the lack of truly nourishing food in their day-to-day life.<\/p><p>This revelation was deepened by a comparison with their parents’ generation, who lived fuller<br\/>and healthier lives, untroubled by the modern ailments they now faced. It was clear: the problem wasn't just personal, it was systemic. The world around them<br\/>was missing something essential - real, wholesome, and nurturing food.<\/p><p>So, driven by this awakening, Siddharth and Pratik embarked on a mission. They saw a gap, a need for foods that not only filled the stomach but nourished the soul. Foods that were easy to incorporate into daily life yet packed with natural goodness. This vision of change, of caring for themselves and others, was the seed from<br\/>which \"Maiva\" grew.<\/p><p>Their quest began at the heart of daily nutrition - milk. Realizing its discomforting effects on those with lactose intolerance, including Pratik, they delved into the world of nut-based milks. Their journey wasn't just about finding alternatives; it was about rediscovering the joy and purity of simple, unadulterated food.<\/p><p>Their toil and passion bore fruit. Maiva emerged, not just as a range of products, but as a symbol of care, of a return to what's genuinely good for us. When they finally<br\/>shared their almond milk with friends and family, the response was heartwarming. It was more than just a drink; it was a return to natural, joyful nourishment. Siddharth and Pratik’s journey with Maiva is more than a business<br\/>venture; it's a heartfelt mission to bring back the essence of nourishment, one loving sip at a time. It's their way of saying, 'we care', not just for our health but for the world we live in.<\/p><p>This is Maiva's promise: to fill every day with 'Pure Good, Pure Joy', nurturing our bodies and souls with every product they lovingly create.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21491227590950__9cef9ebf-403a-419f-b7a7-2c8e73a474ae-content-1"
-      ],
-      "disabled": true,
+    "ce0b962c-0211-4ec9-a968-97b68ce337b5": {
+      "type": "ab-section-3",
       "settings": {
-        "text_align": "left",
-        "inherit_fonts": false,
-        "text_color": "#262424",
-        "background_color": "rgba(0,0,0,0)",
-        "title_border_color": "#000000",
-        "section_height": false,
-        "section_padding_top": 100,
-        "section_padding_bottom": 100,
-        "section_padding_top_mobile": 100,
-        "section_padding_bottom_mobile": 100,
-        "container_max_width": 1320,
-        "custom_class": "",
-        "custom_css": ""
       }
     },
-    "53f83554-8ccf-40be-9b45-8b04d4112a56": {
-      "type": "rich-text",
-      "blocks": {
-        "template--21491227590950__53f83554-8ccf-40be-9b45-8b04d4112a56-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Story",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "template--21491227590950__53f83554-8ccf-40be-9b45-8b04d4112a56-heading-1"
-      ],
+    "1c4c4adb-36a8-4889-ad05-f5fa7188b02a": {
+      "type": "ab-discover",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "fb4c0e69-a815-46fd-9733-beb52727f782": {
-      "type": "ai-sec-ai-rich-text-grid",
-      "blocks": {
-        "ea484627-d16f-4840-99cf-2071b80ef014": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Founders are close friends, Siddharth and Pratik and share a bond deeper than most. Siddharth is a CA and Lawyer, and Pratik a Finance and Supply Chain professional, shared a devotion to health and fitness. From gym routines to sports, their commitment to wellness was a constant echo in their busy lives.<\/p><p>Yet, beneath this surface of success and health, a problem quietly brewed. Long hours at work and relentless travel meant grabbing meals on the go became a norm. Unknowingly,their well-being was slipping through the cracks of fast-food packages and quick cafeteria bites. This path led them to a worrying place: despite their physical activity, their health was declining, mirrored in increasing weight and a cascade of small but persistent health issues - allergies, exhaustion, bloating. Their bodies were silently revolting against the very lifestyle they had adopted.<\/p><p>The moment of truth arrived unexpectedly. During a breakfast shared with laughter and stories, Pratik's recent lactose intolerance came to light. It was a simple conversation but one that opened their eyes wide. They realized the root of their troubles was not just their hectic schedules but the lack of truly nourishing food in their day-to-day life.<\/p><p>This revelation was deepened by a comparison with their parents’ generation, who lived fuller and healthier lives, untroubled by the modern ailments they now faced. It was clear: the problem wasn't just personal, it was systemic. The world around them was missing something essential - real, wholesome, and nurturing food.<\/p><p>So, driven by this awakening, Siddharth and Pratik embarked on a mission. They saw a gap, a need for foods that not only filled the stomach but nourished the soul. Foods that were easy to incorporate into daily life yet packed with natural goodness. This vision of change, of caring for themselves and others, was the seed from which \"Maiva\" grew.<\/p><p>Their quest began at the heart of daily nutrition - milk. Realizing its discomforting effects on those with lactose intolerance, including Pratik, they delved into the world of nut-based milks. Their journey wasn't just about finding alternatives; it was about rediscovering the joy and purity of simple, unadulterated food.<\/p><p>Their toil and passion bore fruit. Maiva emerged, not just as a range of products, but as a symbol of care, of a return to what's genuinely good for us. When they finally shared their almond milk with friends and family, the response was heartwarming. It was more than just a drink; it was a return to natural, joyful nourishment. Siddharth and Pratik’s journey with Maiva is more than a business venture; it's a heartfelt mission to bring back the essence of nourishment, one loving sip at a time. It's their way of saying, 'we care', not just for our health but for the world we live in.<\/p><p>This is Maiva's promise: to fill every day with 'Pure Good, Pure Joy', nurturing our bodies and souls with every product they lovingly create.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "ea484627-d16f-4840-99cf-2071b80ef014"
-      ],
-      "settings": {
-        "background_color": "linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))",
-        "max_width": 1000,
-        "grid_gap": 25,
-        "padding_top": 25,
-        "padding_bottom": 25,
-        "padding_left": 10,
-        "padding_right": 10
       }
     }
   },
   "order": [
     "main",
-    "c51fa746-82f9-4e7c-9ea9-a95a62c2ca7a",
-    "aee38c8d-f60b-4fed-b704-f3f0a961c1be",
-    "de702a69-6271-42f5-964c-a8f2a0d6a211",
-    "9cef9ebf-403a-419f-b7a7-2c8e73a474ae",
-    "53f83554-8ccf-40be-9b45-8b04d4112a56",
-    "fb4c0e69-a815-46fd-9733-beb52727f782"
+    "6f57e0ba-0a99-4d98-86f0-2ad6c8f443f5",
+    "3625b390-f8b7-4f27-8edb-055bba28f5da",
+    "b520396f-b826-484e-a320-cfbeb90214cd",
+    "ce0b962c-0211-4ec9-a968-97b68ce337b5",
+    "1c4c4adb-36a8-4889-ad05-f5fa7188b02a"
   ]
 }

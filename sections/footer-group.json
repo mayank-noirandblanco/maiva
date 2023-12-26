@@ -2,6 +2,11 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "33120e13-34a1-49e2-a497-f2fa23ec9ccd": {
+      "type": "custom-footer",
+      "settings": {
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -16,6 +21,7 @@
       "block_order": [
         "5e4b895b-a803-4a43-a343-62c602783013"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-2",
         "newsletter_enable": true,
@@ -33,6 +39,7 @@
     }
   },
   "order": [
+    "33120e13-34a1-49e2-a497-f2fa23ec9ccd",
     "footer"
   ]
 }

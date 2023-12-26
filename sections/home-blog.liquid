@@ -1,0 +1,221 @@
+    <div class="mobd">
+        <div class="mobd-max">
+            <h3 class="mohddp">Our <br> community</h3>
+            <div class="mobd-inner-main">
+                <div class="mobd-blog1 mobd-com">
+                    <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/pexels-alex-green-5692269_1.png?v=1703428066"
+                        alt="">
+                    <h2>How pro-athletes use delicious plant-based alternatives to elevate their fitness game.</h2>
+                    <span>October 23, 2023</span>
+                </div>
+                <div class="mobd-contant-right">
+                    <div class="mobd-desktop-heading">
+                        <h3>Our <br> community</h3>
+                        <div class="mobd-btn">
+                            <a href="#">see all articles</a>
+                        </div>
+                    </div>
+                    <div class="mobdcrflex">
+                        <div class="mobd-blog2 mobd-com">
+                            <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/pexels-alex-green-5692269_2.png?v=1703428065"
+                                alt="">
+                            <h2>Is your breakfast giving you enough nutrition or just empty calories?</h2>
+                            <span>September 23, 2023</span>
+                        </div>
+                        <div class="mobd-blog3 mobd-com">
+                            <img src="https://cdn.shopify.com/s/files/1/0837/6818/1030/files/pexels-alex-green-5692269_3.png?v=1703428066"
+                                alt="">
+                            <h2>10 delicious zero effort recipes with Maiva.</h2>
+                            <span>August 23, 2023</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mobd-btn mohddp">
+                <a href="#">see all articles</a>
+            </div>
+        </div>
+    </div>
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mobd {
+    padding: 0px 0 30px 0;
+}
+
+.mobd-max {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mobd-blog1 {
+    width: 60%;
+}
+
+.mobd-blog1 h2 {
+    color: #000F9F;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    padding: 10px 0;
+}
+
+
+.mobd-contant-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobd h3 {
+    font-size: 42px !important;
+    color: #000f9f;
+    line-height: 42px !important;
+    font-weight: 600!important;
+}
+
+.mobd img {
+    width: 100%;
+}
+
+.mobd-com span {
+    font-size: 12px !important;
+}
+
+.mobd-inner-main {
+    display: flex;
+    gap: 1em;
+    padding: 20px 0;
+}
+
+.mobdcrflex {
+    display: flex;
+    gap: 1em;
+}
+
+.mobd-blog2 {
+    width: 50%;
+}
+
+.mobd-blog2 h2 {
+    color: #000F9F;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 20px 0;
+}
+
+.mobd-blog3 {
+    width: 50%;
+}
+
+.mobd-blog3 h2 {
+    color: #000F9F;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 20px 0;
+}
+
+.mobd-com {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobd-btn {
+    padding: 20px 0;
+}
+
+.mobd-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: #000f9f;
+    border-radius: 40px;
+    font-size: 14px !important;
+}
+
+.mohddp {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .mohddp {
+        display: block;
+    }
+
+    .mobd-desktop-heading {
+        display: none;
+    }
+
+    .mobd-inner-main {
+        flex-direction: column;
+    }
+
+    .mobd-blog1 {
+        width: 100%;
+    }
+
+    .mobd-contant-right {
+        width: 100%;
+    }
+
+    .mobdcrflex {
+        flex-direction: column;
+    }
+
+    .mobd-blog2 {
+        width: 100%;
+    }
+
+    .mobd-blog3 {
+        width: 100%;
+    }
+
+    .mobd-blog1 h2 {
+        color: #000F9F;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        padding: 10px 0;
+    }
+
+    .mobd-blog2 h2 {
+        color: #000F9F;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        padding: 10px 0;
+    }
+
+    .mobd-blog3 h2 {
+        color: #000F9F;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        padding: 10px 0;
+    }
+}  
+</style>
+
+{% schema %}
+  {
+    "name": "Home Blog",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Home Blog",
+        "category":"section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
