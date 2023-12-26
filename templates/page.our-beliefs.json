@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "c51fa746-82f9-4e7c-9ea9-a95a62c2ca7a": {
+      "type": "kava-image-lily-01",
+      "settings": {
+        "is_fullwidth": true,
+        "background_image": "shopify:\/\/shop_images\/Banners-06.jpg",
+        "image_description": "",
+        "image_description_fz": 24,
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "img_min_height": 80,
+        "background_position_x": 50,
+        "background_position_y": 80,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "img_min_height_mobile": 100,
+        "background_position_x_mobile": 50,
+        "background_position_y_mobile": 50,
+        "container_max_width": 1320,
+        "custom_class": "",
+        "custom_css": "",
+        "lazyload": true
+      }
+    },
+    "aee38c8d-f60b-4fed-b704-f3f0a961c1be": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h1"
+          }
+        },
+        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-heading-1",
+        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-text-1",
+        "template--21491227590950__aee38c8d-f60b-4fed-b704-f3f0a961c1be-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "de702a69-6271-42f5-964c-a8f2a0d6a211": {
+      "type": "multirow",
+      "blocks": {
+        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-1": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "Nourish and Delight, Naturally and Responsibly",
+            "text": "<p><em>At Maiva, our mission is to enrich lives through natural and nutritious foods. We're dedicated to crafting delightful and wholesome alternatives that cater to diverse dietary needs. Embracing sustainability and transparency, we strive to produce foods that benefit our customers and the planet alike. <\/em><\/p><p><em>Our commitment is to make healthy living accessible, joyful, and an integrated part of everyday life, ensuring a positive impact on both individual wellness and global health.<\/em><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-2": {
+          "type": "row",
+          "settings": {
+            "caption": "",
+            "heading": "<strong>A Healthier World, One Meal at a Time<\/strong>",
+            "text": "<p><em>Maiva envisions a world where health and happiness coexist harmoniously. We aspire to lead a global shift towards sustainable and inclusive nutrition, offering delicious choices that nurture both the body and the earth. By championing mindful consumption, we aim to cultivate a community where each meal is a step towards a brighter, healthier future for all.<\/em><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-3": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-1",
+        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-2",
+        "template--21491227590950__de702a69-6271-42f5-964c-a8f2a0d6a211-row-3"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c51fa746-82f9-4e7c-9ea9-a95a62c2ca7a",
+    "aee38c8d-f60b-4fed-b704-f3f0a961c1be",
+    "de702a69-6271-42f5-964c-a8f2a0d6a211"
+  ]
+}

@@ -1,0 +1,448 @@
+{% comment %}
+  © Sections AI. You are free to use this section in your store. You may not redistribute this section in another Shopify app.
+{% endcomment %}
+<style>
+
+  {{ section.settings.text_font | font_face }}
+  {{ section.settings.headline_font | font_face }}
+
+  #sections-ai-split-image-{{ section.id }}.sections-ai-split-image-wrap p,
+  #sections-ai-split-image-{{ section.id }}.sections-ai-split-image-wrap p a {
+    font-size: {{ section.settings.text_size }};
+    font-family: {{ section.settings.text_font.family }}, {{ section.settings.text_font.fallback_families }};
+    font-weight: {{ section.settings.text_font.weight }};
+    line-height: 1.15;
+  }
+
+  #sections-ai-split-image-{{ section.id }}.sections-ai-split-image-wrap h2 {
+    font-size: {{ section.settings.headline_size }};
+    font-family: {{ section.settings.headline_font.family }}, {{ section.settings.headline_font.fallback_families }};
+    font-weight: {{ section.settings.headline_font.weight }};
+    line-height: 1.15;
+  }
+
+  #sections-ai-split-image-{{ section.id }}.sections-ai-split-image-wrap {
+    background-image: {{section.settings.background_color}};
+    width: 100%;
+  }
+
+  #sections-ai-split-image-{{ section.id }} .sections-ai-split-image-grid {
+    position: relative;
+    margin: 0 auto;
+    max-width: {{ section.settings.max_width }}px;
+    padding: {{ section.settings.padding_top }}px {{ section.settings.padding_right }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_left }}px;
+  }
+  
+  .sections-ai-split-image-grid-left {
+    display: grid;
+    {% if section.settings.image_aspect_ratio == "21 / 9" %}
+    grid-template-columns: 3fr 1fr;
+    {% elsif section.settings.image_aspect_ratio == "16 / 9"%}
+    grid-template-columns: 2fr 1fr;
+    {% else %}
+    grid-template-columns: 1fr 1fr;
+    {% endif %}
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sections-ai-split-image-grid-right {
+    display: grid;
+    {% if section.settings.image_aspect_ratio == "21 / 9" %}
+    grid-template-columns: 1fr 3fr;
+    {% elsif section.settings.image_aspect_ratio == "16 / 9"%}
+    grid-template-columns: 1fr 2fr;
+    {% else %}
+    grid-template-columns: 1fr 1fr;
+    {% endif %}
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .sections-ai-split-image-grid-left,
+    .sections-ai-split-image-grid-right {
+      display: block;
+    }
+  }
+
+  .sections-ai-split-image-mobile-text {
+    display: none;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .sections-ai-split-image-column {
+      padding: 5px 0;
+    }
+
+    .sections-ai-split-image-column-text {
+      display: none;
+    }
+
+    .sections-ai-split-image-mobile-text {
+      display: block;
+    }
+  }
+
+  .sections-ai-split-image-grid img {
+    aspect-ratio: {{ section.settings.image_aspect_ratio }};
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+
+  .sections-ai-split-image-grid h2, .sections-ai-split-image-grid p {
+    text-align: center;
+    margin: 0 0 25px 0 !important;
+    padding: 0 !important;
+    color: {{ section.settings.text_color }};
+  }
+
+  .sections-ai-split-image-grid p:last-child {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  #sections-ai-split-image-{{ section.id }} a.sections-ai-split-image-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: {{section.settings.button_background_color}};
+    border-radius: 2px;
+    color: {{section.settings.button_text_color}};
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: none;
+    transition: .25s all;
+  }
+</style>
+
+
+
+<div id="sections-ai-split-image-{{ section.id }}" class="sections-ai-split-image-wrap">
+  <div class="sections-ai-split-image-grid sections-ai-split-image-grid-{{ section.settings.image_location }}">
+
+    {%- if section.settings.image_location == "left" -%}
+    <div class="sections-ai-split-image-column">
+      <img src="{{ section.settings.image | image_url: width: 600 }}"
+          srcset="{{ section.settings.image | image_url: width: 600 }} 600w, {{ section.settings.image | image_url: width: 1100 }} 1100w">
+    </div>
+    <div class="sections-ai-split-image-column sections-ai-split-image-column-text">
+      <h2 class="heading">{{ section.settings.headline }}</h2>
+      <p>{{ section.settings.content }}</p>
+      <p><a class="sections-ai-split-image-cta" href="{{ section.settings.link }}">{{ section.settings.link_text }}</a></p>
+    </div>
+    {%- endif -%}
+
+    {%- if section.settings.image_location == "right" -%}
+    <div class="sections-ai-split-image-column sections-ai-split-image-column-text">
+      <h2 class="heading">{{ section.settings.headline }}</h2>
+      <p>{{ section.settings.content }}</p>
+      <p><a class="sections-ai-split-image-cta" href="{{ section.settings.link }}">{{ section.settings.link_text }}</a></p>
+    </div>
+    <div class="sections-ai-split-image-column">
+      <img src="{{ section.settings.image | image_url: width: 600 }}"
+          srcset="{{ section.settings.image | image_url: width: 600 }} 600w, {{ section.settings.image | image_url: width: 1100 }} 1100w">
+    </div>
+    {%- endif -%}
+
+    <div class="sections-ai-split-image-mobile-text">
+      <h2 class="heading">{{ section.settings.headline }}</h2>
+      <p>{{ section.settings.content }}</p>
+      <p><a class="sections-ai-split-image-cta" href="{{ section.settings.link }}">{{ section.settings.link_text }}</a></p>
+    </div>
+    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image with Text",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text",
+        "info": "Set the text size for your widget"
+      },
+      {
+        "type": "font_picker",
+        "id": "text_font",
+        "label": "Text Font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text Size",
+        "options": [
+          {
+            "value": "10pt",
+            "label": "10pt"
+          },
+          {
+            "value": "12pt",
+            "label": "12pt"
+          },
+          {
+            "value": "14pt",
+            "label": "14pt"
+          },
+          {
+            "value": "15pt",
+            "label": "15pt"
+          },
+          {
+            "value": "16pt",
+            "label": "16pt"
+          },
+          {
+            "value": "17pt",
+            "label": "17pt"
+          },
+          {
+            "value": "18pt",
+            "label": "18pt"
+          },
+          {
+            "value": "20pt",
+            "label": "20pt"
+          },
+          {
+            "value": "22pt",
+            "label": "22pt"
+          },
+          {
+            "value": "25pt",
+            "label": "25pt"
+          },
+          {
+            "value": "30pt",
+            "label": "30pt"
+          },
+          {
+            "value": "35pt",
+            "label": "35pt"
+          },
+          {
+            "value": "inherit",
+            "label": "inherit"
+          }
+        ],
+        "default": "17pt"
+      },
+      {
+        "type": "font_picker",
+        "id": "headline_font",
+        "label": "Headline Font",
+        "default": "helvetica_n4"
+      },
+      {
+        "type": "select",
+        "id": "headline_size",
+        "label": "Headline Size",
+        "options": [
+          {
+            "value": "10pt",
+            "label": "10pt"
+          },
+          {
+            "value": "12pt",
+            "label": "12pt"
+          },
+          {
+            "value": "14pt",
+            "label": "14pt"
+          },
+          {
+            "value": "15pt",
+            "label": "15pt"
+          },
+          {
+            "value": "16pt",
+            "label": "16pt"
+          },
+          {
+            "value": "17pt",
+            "label": "17pt"
+          },
+          {
+            "value": "18pt",
+            "label": "18pt"
+          },
+          {
+            "value": "20pt",
+            "label": "20pt"
+          },
+          {
+            "value": "22pt",
+            "label": "22pt"
+          },
+          {
+            "value": "25pt",
+            "label": "25pt"
+          },
+          {
+            "value": "30pt",
+            "label": "30pt"
+          },
+          {
+            "value": "35pt",
+            "label": "35pt"
+          },
+          {
+            "value": "40pt",
+            "label": "40pt"
+          },
+          {
+            "value": "inherit",
+            "label": "inherit"
+          }
+        ],
+        "default": "22pt"
+      },
+      {
+        "type": "header",
+        "content": "Colors",
+        "info": "Set colors for the section."
+      },
+      {
+        "type": "color_background",
+        "id": "background_color",
+        "default": "linear-gradient(164deg, #FFF 0%, #FFF 100%)",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "default": "#111111",
+        "label": "Text Color"
+      },
+      {
+        "type": "color_background",
+        "id": "button_background_color",
+        "default": "linear-gradient(164deg, #111 0%, #333 100%)",
+        "label": "Button Background Color"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "default": "#fff",
+        "label": "Button Text Color"
+      },
+      {
+        "type": "header",
+        "content": "Dimensions",
+        "info": "Set the section dimensions in pixels."
+      },
+      {
+        "type": "number",
+        "id": "max_width",
+        "default": 1000,
+        "label": "Max Width of Section"
+      },
+      {
+        "type": "number",
+        "id": "padding_top",
+        "default": 25,
+        "label": "Padding Top"
+      },
+      {
+        "type": "number",
+        "id": "padding_bottom",
+        "default": 25,
+        "label": "Padding Bottom"
+      },
+      {
+        "type": "number",
+        "id": "padding_left",
+        "default": 10,
+        "label": "Padding Left"
+      },
+      {
+        "type": "number",
+        "id": "padding_right",
+        "default": 10,
+        "label": "Padding Right"
+      },
+      {
+        "type": "header",
+        "content": "Content",
+        "info": "Set image and text for section"
+      },
+      {
+        "type": "select",
+        "id": "image_location",
+        "label": "Image Location",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      },
+      {
+        "type": "select",
+        "id": "image_aspect_ratio",
+        "label": "Image Aspect Ratio",
+        "options": [
+          {
+            "value": "21 / 9",
+            "label": "21:9"
+          },
+          {
+            "value": "16 / 9",
+            "label": "16:9"
+          },
+          {
+            "value": "4 / 3",
+            "label": "4:3"
+          }
+        ],
+        "default": "21 / 9"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "headline",
+        "label": "Headline",
+        "default": "Sample headline"
+      },
+      {
+        "type": "text",
+        "id": "content",
+        "label": "Content",
+        "default": "Sample content"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link Text",
+        "default": "Shop More"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with Text",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

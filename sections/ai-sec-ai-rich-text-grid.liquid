@@ -1,0 +1,196 @@
+{% comment %}
+  © Sections AI. You are free to use this section in your store. You may not redistribute this section in another Shopify app.
+{% endcomment %}
+<style>
+
+  {{ section.settings.text_font | font_face }}
+  {{ section.settings.headline_font | font_face }}
+
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid p,
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid p a {
+    font-size: {{ section.settings.text_size }};
+    font-family: {{ section.settings.text_font.family }}, {{ section.settings.text_font.fallback_families }};
+    font-weight: {{ section.settings.text_font.weight }};
+    line-height: 1.15;
+  }
+
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid h1,
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid h2,
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid h3,
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid h4 {
+    font-size: {{ section.settings.headline_size }};
+    font-family: {{ section.settings.headline_font.family }}, {{ section.settings.headline_font.fallback_families }};
+    font-weight: {{ section.settings.headline_font.weight }};
+    line-height: 1.15;
+  }
+
+  #sections-ai-richtext-grid-{{ section.id }}.sections-ai-richtext-grid-wrap {
+    background-image: {{ section.settings.background_color }};
+    width: 100%;
+  }
+
+
+  #sections-ai-richtext-grid-{{ section.id }} .sections-ai-richtext-grid {
+    position: relative;
+    margin: 0 auto;
+    max-width: {{ section.settings.max_width }}px;
+    padding: {{ section.settings.padding_top }}px {{ section.settings.padding_right }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_left }}px;
+  }
+
+  #sections-ai-richtext-grid-{{ section.id }}  .sections-ai-richtext-grid .sections-ai-richtext-grid-grid {
+    display: grid;
+    align-items: center;
+    gap: {{ section.settings.grid_gap}}px;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media only screen and (min-width: 801px) {
+    .sections-ai-richtext-grid .sections-ai-richtext-grid-grid {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-flow: column;
+      
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .sections-ai-richtext-grid .sections-ai-richtext-grid-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+  }
+
+  #sections-ai-richtext-grid-{{ section.id }}  .sections-ai-richtext-grid .sections-ai-richtext-grid-cover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: {{section.settings.cover_background}};
+    opacity: {{section.settings.cover_opacity}}%;
+    transition: all .5s;
+    visibility: hidden;
+  }
+
+  #sections-ai-richtext-grid-{{ section.id }}  .sections-ai-richtext-grid-col:hover .sections-ai-richtext-grid-cover {
+    opacity: {{section.settings.cover_opacity | plus: 15 }}%;
+    visibility: visible;
+  }
+
+  .sections-ai-richtext-grid-col {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+
+  }
+</style>
+
+<div id="sections-ai-richtext-grid-{{ section.id }}" class="sections-ai-richtext-grid-wrap">
+
+<div class="sections-ai-richtext-grid">
+
+  <div class="sections-ai-richtext-grid-grid">
+
+    {% for block in section.blocks %}
+      <div class="sections-ai-richtext-grid-col">
+        {{ block.settings.text }}
+      </div>
+      <!-- /.sections-ai-richtext-grid-col -->
+
+    {% endfor %}
+
+  </div>
+  <!-- /.sections-ai-richtext-grid-grid -->
+  
+</div>
+<!-- /.sections-ai-richtext-grid -->
+
+</div>
+<!-- /.sections-ai-richtext-grid-wrap -->
+
+{% schema %}
+  {
+    "name": "Sec.ai - Rich Text Grid",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Colors",
+        "info": "Set colors for the section."
+      },
+      {
+        "type": "color_background",
+        "id": "background_color",
+        "default": "linear-gradient(164deg, #fff 0%, #fff 0%)",
+        "label": "Background"
+      },
+      {
+        "type": "header",
+        "content": "Dimensions",
+        "info": "Set the section dimensions in pixels."
+      },
+      {
+        "type": "number",
+        "id": "max_width",
+        "default": 1000,
+        "label": "Max Width of Section"
+      },
+      {
+        "type": "number",
+        "id": "grid_gap",
+        "default": 25,
+        "label": "Gap Between Images"
+      },
+      {
+        "type": "number",
+        "id": "padding_top",
+        "default": 25,
+        "label": "Padding Top"
+      },
+      {
+        "type": "number",
+        "id": "padding_bottom",
+        "default": 25,
+        "label": "Padding Bottom"
+      },
+      {
+        "type": "number",
+        "id": "padding_left",
+        "default": 10,
+        "label": "Padding Left"
+      },
+      {
+        "type": "number",
+        "id": "padding_right",
+        "default": 10,
+        "label": "Padding Right"
+      }
+    ],
+	"blocks": [
+      {
+       "name": "Text",
+       "type": "text",
+       "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Rich Text"
+          }
+       ]
+      }
+    ],
+	"presets": [
+      {
+        "name": "Sec.ai - Rich Text Grid",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

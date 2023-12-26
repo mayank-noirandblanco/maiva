@@ -1,0 +1,140 @@
+<script src="https://cdn.jsdelivr.net/npm/qr-creator@1.0.0/dist/qr-creator.min.js" defer onload='wishitQR()'></script>
+<div style="background-color: {{ section.settings.section_bg_colour }}" class='wishit-qr-code-section section-{{ section.id }}-padding'>
+  <div class='page-width wishit-page-width'>
+    <div class='wishit-panel'>
+        <h1 class='wishit-title'>{{ section.settings.title }}</h1>
+        <p class='wishit-content'>{{ section.settings.content }}</p>
+    </div>
+    <div class='wishit-panel wishit-qr-panel'>
+        <div id='wishit-qr-code' class='wishit-qr-code'></div>
+        <a href='{{ section.settings.qr_link }}' target='_blank' class='wishit-button'>
+          {{ section.settings.button_text }}
+        </a>
+    </div>
+  </div>
+</div>
+<style>
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  background-color: {{ section.settings.section_bg_colour }};
+}
+.section-{{ section.id }}-padding > *{
+  color: {{ section.settings.section_font_colour }};
+}
+.wishit-page-width {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.wishit-qr-code-section .wishit-panel {
+  /* Set default styles */
+  padding: 10px;
+
+  /* Set full-width on mobile */
+  width: 100%;
+}
+
+.wishit-qr-code-section .wishit-qr-panel{
+    text-align: center;
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+  .wishit-qr-code-section .wishit-panel {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.wishit-qr-code-section .wishit-qr-code canvas{
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+.wishit-qr-code-section a.wishit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: {{ section.settings.button_bg_color }} ;
+  color: {{ section.settings.button_font_color }};
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.wishit-qr-code-section a.wishit-button:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.3);
+}
+
+</style>
+<script>
+function wishitQR(){
+  QrCreator.render({
+    text: '{{ section.settings.qr_link }}',
+    radius: 0.5, // 0.0 to 0.5
+    ecLevel: 'H', // L, M, Q, H
+    fill: '{{ section.settings.qr_color }}', // foreground color
+    background: null, // color or null for transparent
+    size: {{ section.settings.qr_size }} // in pixels
+  }, document.querySelector('#wishit-qr-code'));
+}
+</script>
+{% schema %}
+{
+  "name": "WishIt QR Code Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Wishit Customization Support",
+      "info": "For any customizations required in this section, feel free to write to us at contact@adevole.com"
+    },
+    { "type": "color", "id": "section_bg_colour", "label": "Section Background Colour"},
+    { "type": "color", "id": "section_font_colour", "label": "Section Font Colour"},
+    { "type": "text", "id": "qr_link", "label": "QR Link", "info": "Link for which you need to generate QR. Click theme save to regenerate the QR code.", "default": "https://www.google.com" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Get Additional Discounts on our App" },
+    { "type": "richtext", "id": "content", "label": "Content", "default": "<p>Welcome to our store! We are excited to offer you the best products and deals in town.</p> <p> To make sure you never miss out on any of our exciting offers, scan this QR code to download our App! or click on button below.</p>" },
+    { "type": "header", "content": "QR Code Setting" },
+    { "type": "number", "id": "layout", "label": "Layout" },
+    { "type": "color", "id": "qr_color", "label": "QR Colour", "default": "#000000" },
+    { "type": "range", "id": "qr_size", "label": "QR Code Size", "default": 300, "step": 10, "min": 100, "max": 1000  },
+    { "type": "header", "content": "Button Setting" },
+    { "type": "text", "id": "button_text", "label": "Button Text", "default": "Visit Link" },
+    { "type": "color", "id": "button_bg_color", "label": "Button Background Colour", "default": "#000000"  },
+    { "type": "color", "id": "button_font_color", "label": "Button Font Colour", "default": "#ffffff"  },
+    {
+      "type": "header",
+      "content": "Section Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 80
+    }
+  ],
+    "presets": [
+      {
+        "name": "WishIt QR Code Section"
+      }
+    ]
+}
+{% endschema %}
+<script type="text/javascript">"undefined"==typeof wishit_script&&((wishit_script=document.createElement("script")).src="https://ccp.eshopcrm.com/wishit-license.js",wishit_script.async=!0,document.head.appendChild(wishit_script));</script>
+<script type="text/javascript">"undefined"==typeof wishit_script&&((wishit_script=document.createElement("script")).src="https://ccp.eshopcrm.com/wishit-license.js",wishit_script.async=!0,document.head.appendChild(wishit_script));</script>

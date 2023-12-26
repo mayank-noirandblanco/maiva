@@ -1,0 +1,433 @@
+ {% assign sec_id = section.id | slice: -6, 6 | replace: '-', '_' %}
+{% assign sec_id = sec_id | prepend: 'pw' %}
+
+{%- style -%}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.pw-container,
+.pw-container-fluid {
+  width: 100%;
+  padding-right: var(--pw-gutter-x, 15px);
+  padding-left: var(--pw-gutter-x, 15px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .pw-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 750px) {
+  .pw-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pw-container {
+    max-width: 960px;
+  }
+  {% if section.settings.container_max_width >= 720 and section.settings.container_max_width <= 960 %}
+    .pw-section__{{sec_id}} .pw-container {
+      max-width: {{section.settings.container_max_width}}px;
+    }
+  {% endif %}
+}
+
+@media (min-width: 1200px) {
+  .pw-container {
+    max-width: 1140px;
+  }
+  {% if section.settings.container_max_width >= 720 and section.settings.container_max_width <= 1140 %}
+    .pw-section__{{sec_id}} .pw-container {
+      max-width: {{section.settings.container_max_width}}px;
+    }
+  {% endif %}
+}
+
+@media (min-width: 1400px) {
+  .pw-container {
+    max-width: 1320px;
+  }
+  {% if section.settings.container_max_width >= 720 and section.settings.container_max_width != 1320 %}
+    .pw-section__{{sec_id}} .pw-container {
+      max-width: {{section.settings.container_max_width}}px;
+    }
+  {% endif %}
+}
+
+.pw-container,
+.pw-container-fluid {
+  padding-right: var(--pw-gutter-x, 15px);
+  padding-left: var(--pw-gutter-x, 15px);
+}
+
+.pw-section__{{sec_id}} {
+  --pw-gutter-x: 25px;
+  color: {{section.settings.text_color}};
+  background-color: {{section.settings.background_color}};
+  {% if section.settings.section_height == true %}
+    min-height: 100vh;
+  {% endif %}
+  padding-top: {{section.settings.section_padding_top}}px;
+  padding-bottom: {{section.settings.section_padding_bottom}}px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.pw-section__{{sec_id}} .pw-section-inner {
+  text-align: {{section.settings.section_inner_align}};
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+
+.pw-section__{{sec_id}} .pw-section-title::before,
+.pw-section__{{sec_id}} .pw-section-title::after {
+  display: none;
+}
+
+.pw-section__{{sec_id}} .pw-section-title {
+  color: {{section.settings.text_color}};
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: {{section.settings.section_inner_align}};
+}
+
+.pw-section__{{sec_id}} .pw-section-text {
+  color: {{section.settings.text_color}};
+  margin: 0;
+  padding-left: 40px;
+  border-left: 0;
+  margin-bottom: 30px;
+  position: relative;
+  font-style: italic;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.pw-section__{{sec_id}} .pw-section-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 37px;
+  height: 34px;
+  background: url("data:image/svg+xml,%3Csvg width='38' height='35' viewBox='0 0 38 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.4561 0H9.58252L0 34.729H12.146L17.4561 0ZM37.7197 0H29.8462L20.2637 34.729H32.4097L37.7197 0Z' fill='{{section.settings.quote_color | replace: '#', '%23'}}'/%3E%3C/svg%3E%0A") no-repeat center/contain;
+}
+
+.pw-section__{{sec_id}} .pw-section-text p {
+  color: {{section.settings.text_color}};
+  margin-top: 0;
+}
+
+.pw-section__{{sec_id}} .pw-quote-author {
+  color: {{section.settings.text_color}};
+  font-style: italic;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+{% if section.settings.inherit_fonts == false %}
+  .pw-section__{{sec_id}} h1.pw-section-title {
+    font-size: 72px;
+  }
+  .pw-section__{{sec_id}} h2.pw-section-title {
+    font-size: 56px;
+  }
+  .pw-section__{{sec_id}} h3.pw-section-title {
+    font-size: 32px;
+  }
+  .pw-section__{{sec_id}} .pw-section-text p {
+    font-size: 24px; margin-bottom: 24px;
+  }
+{% endif %}
+
+@media only screen and (max-width: 749px) {
+  .pw-section__{{sec_id}} {
+    min-height: auto;
+    padding-top: {{section.settings.section_padding_top_mobile}}px;
+    padding-bottom: {{section.settings.section_padding_bottom_mobile}}px;
+  }
+  .pw-section__{{sec_id}} .pw-section-text {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+  .pw-section__{{sec_id}} .pw-section-text::before {
+    left: 0;
+  }
+  .pw-section__{{sec_id}} .pw-quote-author  {
+    padding-left: 0;
+  }
+  {% if section.settings.inherit_fonts == false %}
+    .pw-section__{{sec_id}} h1.pw-section-title {
+      font-size: 50px;
+    }
+    .pw-section__{{sec_id}} h2.pw-section-title {
+      font-size: 40px;
+    }
+    .pw-section__{{sec_id}} h3.pw-section-title {
+      font-size: 26px;
+    }
+    .pw-section__{{sec_id}} .pw-section-text p {
+      font-size: 20px;
+    }
+  {% endif %}
+}
+
+{%- endstyle -%}
+
+{% if section.settings.custom_css != blank %}
+  {%- style -%}
+  {{section.settings.custom_css}}
+  {%- endstyle -%}
+{% endif %}
+
+<div class="pw-section__{{sec_id}} {{ section.settings.custom_class }}">
+  <div class="pw-container">
+    <div class="pw-section-inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+          {% if block.settings.heading_text != blank %}
+            <{{ block.settings.heading_tag }} class="pw-section-title" {{ block.shopify_attributes }}>
+            {{ block.settings.heading_text | escape }}
+            </{{ block.settings.heading_tag }}>
+          {% endif %}
+
+          {% when 'text' %}
+          {% if block.settings.section_text != blank %}
+           <blockquote class="pw-section-text" {{ block.shopify_attributes }}>
+            {{ block.settings.section_text }}
+          </blockquote>
+          {% endif %}
+
+          {% when 'author' %}
+          {% if block.settings.quote_author != blank %}
+           <div class="pw-quote-author" {{ block.shopify_attributes }}>
+            {{ block.settings.quote_author | escape }}
+          </div>
+          {% endif %}
+
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+
+{
+  "name": "[Kava] Quote-Lucy-01",
+  "tag": "section",
+  "class": "kava-quote kava-quote-lucy-01",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main settings"
+    }, 
+    {
+      "type": "checkbox",
+      "id": "inherit_fonts",
+      "default": false,
+      "label": "Inherit font sizes from theme"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#262424"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "id": "quote_color",
+      "label": "Quotes color",
+      "default": "#0535F5"
+    },
+    {
+      "type": "select",
+      "id": "section_inner_align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        }, {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    }, 
+    {
+      "type": "header",
+      "content": "Desktop"
+    }, 
+    {
+      "type": "checkbox",
+      "id": "section_height",
+      "default": false,
+      "label": "Full screen height"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 100
+    }, 
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding-bottom",
+      "default": 50
+    },
+     {
+      "type": "header",
+      "content": "Customization"
+    }, 
+    {
+      "type": "number",
+      "id": "container_max_width",
+      "label": "Content width limit (px)",
+      "default": 1320
+    }, 
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom сlass"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Heading",
+      "type": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "heading_text",
+          "label": "Heading text"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            }, {
+              "value": "h2",
+              "label": "H2"
+            }, {
+              "value": "h3",
+              "label": "H3"
+            }
+          ],
+          "default": "h2"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "type": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "section_text",
+          "label": "Section text",
+          "default": "<p>Quote text</p>"
+        }
+      ]
+    },
+    {
+      "name": "Author",
+      "type": "author",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "quote_author",
+          "label": "Quote Author",
+          "default": "Quote Author"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[Kava] Quote-Lucy-01",
+      "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "section_text": "<p>“Creativity in web design is and always will be a demanding factor in order to remain ahead of the competition by giving enough reasons to those handling the SERPs and their associated algorithms. Ultimately, an attractive, interactive and streamlined web design will help increase rankings.”</p>"
+          }
+        },
+        {
+          "type": "author",
+          "settings": {
+            "quote_author": "- Sohail Rupani, Senior SEO strategist"
+          }
+        }
+      ]
+    }
+  ]
+  
+}
+
+{% endschema %}

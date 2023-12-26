@@ -1,0 +1,214 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16996790957df159d5": {
+      "type": "apps",
+      "blocks": {
+        "3eeef2c3-9f94-4b8e-a6fa-6a423b842661": {
+          "type": "shopify:\/\/apps\/common-ninja-image-hotspot\/blocks\/app-block\/01021059-70aa-4c9c-b157-972fb9e0a750",
+          "settings": {
+            "isVisible": true,
+            "appId": "b5350715-1ba2-4671-890f-8fa7d7c9354d"
+          }
+        }
+      },
+      "block_order": [
+        "3eeef2c3-9f94-4b8e-a6fa-6a423b842661"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "57246d01-3ec0-4db6-8d8b-3c655544b825": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21494168125734__57246d01-3ec0-4db6-8d8b-3c655544b825-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Oat Cashew Yoghurt",
+            "heading_size": "h1"
+          }
+        },
+        "template--21494168125734__57246d01-3ec0-4db6-8d8b-3c655544b825-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A warm embrace for your well-being. With Blueberry, Strawberry, and Mango flavors, they're vegan, lactose-free, and packed with probiotics. Real fruit, no preservatives, no added sugars, and low glycemic index – a caring choice.<\/p>"
+          }
+        },
+        "template--21494168125734__57246d01-3ec0-4db6-8d8b-3c655544b825-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21494168125734__57246d01-3ec0-4db6-8d8b-3c655544b825-heading-1",
+        "template--21494168125734__57246d01-3ec0-4db6-8d8b-3c655544b825-text-1",
+        "template--21494168125734__57246d01-3ec0-4db6-8d8b-3c655544b825-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "5c8484bc-5835-4ca6-a853-217bff1b398e": {
+      "type": "kava-team-madeline-04",
+      "blocks": {
+        "template--21494168125734__5c8484bc-5835-4ca6-a853-217bff1b398e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading_tag": "h2",
+            "heading_text": "Why Maiva Fresh",
+            "sub_heading_text": "What makes this range of Yoghurts very special?"
+          }
+        },
+        "template--21494168125734__5c8484bc-5835-4ca6-a853-217bff1b398e-member-1": {
+          "type": "member",
+          "settings": {
+            "member_image": "shopify:\/\/shop_images\/candy-hearts-pile.jpg",
+            "member_name": "Zero Added Sugars",
+            "member_position": "No added Sugars, Artificial Sweeteners or Polyols"
+          }
+        },
+        "template--21494168125734__5c8484bc-5835-4ca6-a853-217bff1b398e-member-2": {
+          "type": "member",
+          "settings": {
+            "member_image": "shopify:\/\/shop_images\/dose-juice-sTPy-oeA3h0-unsplash_ow_res.jpg",
+            "member_name": "Vegan",
+            "member_position": "Completely dairy free and plant based."
+          }
+        },
+        "b9c7faa3-625a-486b-91d8-cfae004c71e7": {
+          "type": "member",
+          "settings": {
+            "member_image": "shopify:\/\/shop_images\/jamie-street-tb5A-QTI6xg-unsplash.jpg",
+            "member_name": "Zero Cholesterol",
+            "member_position": "Great for the heart and health"
+          }
+        }
+      },
+      "block_order": [
+        "template--21494168125734__5c8484bc-5835-4ca6-a853-217bff1b398e-heading-1",
+        "template--21494168125734__5c8484bc-5835-4ca6-a853-217bff1b398e-member-1",
+        "template--21494168125734__5c8484bc-5835-4ca6-a853-217bff1b398e-member-2",
+        "b9c7faa3-625a-486b-91d8-cfae004c71e7"
+      ],
+      "settings": {
+        "inherit_fonts": true,
+        "text_color": "#262424",
+        "background_color": "transparent",
+        "text_align": "center",
+        "is_rounded": true,
+        "is_grayscale": false,
+        "section_height": false,
+        "section_padding_top": 20,
+        "section_padding_bottom": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 0,
+        "container_max_width": 1320,
+        "custom_class": "",
+        "custom_css": "",
+        "lazyload": true
+      }
+    },
+    "b3981d43-2425-4f7e-be33-22ad727a0340": {
+      "type": "kava-team-madeline-04",
+      "blocks": {
+        "template--21494168125734__b3981d43-2425-4f7e-be33-22ad727a0340-member-1": {
+          "type": "member",
+          "settings": {
+            "member_image": "shopify:\/\/shop_images\/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg",
+            "member_name": "Goodness of Oats",
+            "member_position": "Great source of fiber, energy and essential beta glucan"
+          }
+        },
+        "template--21494168125734__b3981d43-2425-4f7e-be33-22ad727a0340-member-2": {
+          "type": "member",
+          "settings": {
+            "member_image": "shopify:\/\/shop_images\/brooke-lark-nTZOILVZuOg-unsplash.jpg",
+            "member_name": "Real Fruits",
+            "member_position": "A burst of fruits for your good health!"
+          }
+        },
+        "template--21494168125734__b3981d43-2425-4f7e-be33-22ad727a0340-member-3": {
+          "type": "member",
+          "settings": {
+            "member_image": "shopify:\/\/shop_images\/anna-pelzer-IGfIGP5ONV0-unsplash.jpg",
+            "member_name": "Probiotics",
+            "member_position": "Laden with 1.5 billion CFU of probiotics for gut health"
+          }
+        }
+      },
+      "block_order": [
+        "template--21494168125734__b3981d43-2425-4f7e-be33-22ad727a0340-member-1",
+        "template--21494168125734__b3981d43-2425-4f7e-be33-22ad727a0340-member-2",
+        "template--21494168125734__b3981d43-2425-4f7e-be33-22ad727a0340-member-3"
+      ],
+      "settings": {
+        "inherit_fonts": true,
+        "text_color": "#262424",
+        "background_color": "transparent",
+        "text_align": "center",
+        "is_rounded": true,
+        "is_grayscale": false,
+        "section_height": false,
+        "section_padding_top": 0,
+        "section_padding_bottom": 100,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 50,
+        "container_max_width": 1320,
+        "custom_class": "",
+        "custom_css": "",
+        "lazyload": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "16996790957df159d5",
+    "57246d01-3ec0-4db6-8d8b-3c655544b825",
+    "5c8484bc-5835-4ca6-a853-217bff1b398e",
+    "b3981d43-2425-4f7e-be33-22ad727a0340"
+  ]
+}
